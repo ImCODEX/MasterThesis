@@ -1,0 +1,36 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.13.3",
+  "startedAt": "2025-08-02T14:15:58.036995Z",
+  "program": "C:\\Users\\razva\\OneDrive\\Desktop\\MasterThesisPostescuRazvanIoan\\grpo_finetune.py",
+  "codePath": "grpo_finetune.py",
+  "codePathLocal": "grpo_finetune.py",
+  "email": "razvanpostescu@gmail.com",
+  "root": "C:\\Users\\razva\\OneDrive\\Desktop\\MasterThesisPostescuRazvanIoan",
+  "host": "CODEX-PC",
+  "executable": "C:\\Users\\razva\\OneDrive\\Desktop\\MasterThesisPostescuRazvanIoan\\.venv\\Scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "3999857111040",
+      "used": "2741954359296"
+    }
+  },
+  "memory": {
+    "total": "33443184640"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "memoryTotal": "12878610432",
+      "cudaCores": 7680,
+      "architecture": "Ada",
+      "uuid": "GPU-df1bfbb5-1b2d-1cbb-99be-4640b89c071c"
+    }
+  ],
+  "cudaVersion": "12.7",
+  "writerId": "vn1ya50wia5e92eqicz3q9oczxdrn0da"
+}

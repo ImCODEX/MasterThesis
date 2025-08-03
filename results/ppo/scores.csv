@@ -1,0 +1,257 @@
+prompt,baseline_score,tuned_score,delta
+"function(fragmentOverride,state){ 			var fragment = baseUrl+( this.fragment = this.getFragment(fragmentOverride)); 			if(fragment){ 				var a=$('a[href=""'+fragment+'""]'); 				a.len",7.7748,7.7748,0.0000
+"function deepLook(obj, types) {   if (typeof (obj) !== 'object') return obj;   for (var key in obj) {     if (!obj[key].type) {       obj[key] = deepLook(obj[key], types);     } el",8.6744,8.6744,0.0000
+"function parseExpression(data, line) {     data = data.trim();      var lowerData = data.toLowerCase();     var positions = util.findPositions(lowerData, [         { 'start': '""', ",7.7040,7.7040,0.0000
+"function skipUntil(predicate) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_18, _a;             let i = 0",8.5217,8.6002,0.0785
+function preparePath(path) { 		var parts = path.split('.') 		parts = parts.map(function (part) { 			return numericRegex.test(part) ? part : '\'' + escape(part) + '\'' 		}) 		return,7.3105,7.3105,0.0000
+"function wrapContext(context) {   var retObj = {},       reservedRegexp = /^(topic|beforeEach|afterEach)$/,       key,       subcontext,       beforeFn = context.beforeEach,       ",7.9332,7.7596,-0.1736
+function(cb) {             // Load policy modules             sails.log.verbose('Loading policy modules from app...');             sails.modules.loadPolicies(function modulesLoaded,7.6180,7.5628,-0.0552
+"function forward(receiver, provider, keys) {   keys = keys || allKeys(provider);   keys = Array.isArray(keys) ? keys : [keys];    keys.forEach(function (key) {     var val = provid",9.0805,8.2062,-0.8742
+function(app){          // Cache the instance.         var self = this;          // Insert the instance into app.locals so it can be used in views.         app.locals[self.options.,7.7230,6.0642,-1.6588
+"function () {             var mapping = { };             _.each(sails.config.policies, function (_policy, controllerId) {                  // Accept `FooController` or `foo`       ",7.5835,7.3450,-0.2386
+"function or(other) {     return function (source) {         return __asyncGenerator(this, arguments, function* () {             var e_28, _a;             let hasYieldedItem = f",8.1354,8.3519,0.2165
+"function PrintCommand(args, define) {     if (args[args.length - 1] === "";"") {         this.noLine = true;         args = args.substr(-1);     } else this.noLine = false;      var ",8.3116,8.3116,0.0000
+"function val(node, _val2) {             if (node && node.el) {                 var el = node.el;                 if (_val2 !== undefined) {                     el.value = _val2;   ",7.9075,7.9075,0.0000
+function (params) {     var res = [];     if (typeof (params) === 'undefined') params = { displayEverything: false };     if (!this.registeredModels || Object.keys(this.registeredM,7.9787,8.4420,0.4634
+"function(app, route){          var self = this;          var controller;         var controllerPath = self.options.controllersPath + route.controller;          // Load the controll",8.3637,7.0763,-1.2875
+function ReadCommand(args) {     var parsed = new statements.ArgumentStatement(args);     for (var i = 0; i < parsed.args.length; i++) {         var placeVar = parsed.args[i];     ,8.5448,8.5448,0.0000
+"function findLastOutside(data, items, index, exclude) {     var result, positionResult = {start: index ? index + 1 : data.length + 1, end: 0};      do {         result = findLast(d",6.7049,7.0424,0.3375
+"function charAt(index) {     return value => value.length <= index ? undefined : value.charAt(index); }",8.0532,8.0532,0.0000
+"function(data){ 			this.data = UObj.extend(this.data,data); 			return this.update(null,{ data: data }); 		}",7.7666,7.7666,0.0000
+"function(value){ 		/*#if BROWSER*/ if(this._label) this._label.text(value); else /*#/if*/ 		this._label=$.create('label').attr('for',this.getAttr('id'))/*#if BROWSER*/.prependTo(th",6.7971,7.2844,0.4873
+function (string) { // string.check check sting type and size              return ((typeof string === 'string' || string instanceof String)                     && string.length >= ,7.8524,7.5627,-0.2896
+"function () {     // Collect the arguments for passing     var args = [].slice.call(arguments);      // Run the items in order and capture the return value     before.apply(this, a",7.9528,7.8361,-0.1166
+"function processExpr(exprObj, idx) {     var randExpr = clubexpr.replaceValuesWith(exprObj.expr, clubexpr.randomNumbers(9));     var link = '<a href=""#e' + (idx+1) + '"">' + (idx+1)",7.7356,7.6485,-0.0871
+function TriangleCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 6) throw new SyntaxError('TRIANGLE command requires 6 argume,8.1736,8.0016,-0.1719
+"function RegexFinderStrategy(config) { 	config = config || {};  	FinderStrategy.call(this, config); 	this.config = extend(true, this.config, {}, config); }",8.4707,7.8699,-0.6009
+"function copy (target, source) {   for (var key in Object(source)) target[key] = source[key]   return target }",9.0443,8.9524,-0.0919
+function onChildAdd(newData) {      // ignore all events before first read     if (!started) return;      // ignore already added item     if (data[newData.key()]) return;      // ,8.3004,8.3528,0.0523
+function (section) { 		section.children.forEach(function (child) { 			if (child.type === 'section') { 				finalParse(child) 			} else if (child.type === 'text' || 				child.type ==,8.6317,8.5146,-0.1171
+"function insertBefore(parent, child, index) {             var parentEl = parent.el,                 childEl = child.el;             if (parentEl !== undefined && childEl !== undefi",7.2175,7.6152,0.3978
+"function wrapMiddleware(fn) {   assert(typeof fn === 'function', `express中间件必须是一个函数类型`);   assert(fn.length >= 2, `express中间件必须至少有2个参数`);   if (fn.length === 2) {     return functi",8.4785,8.3048,-0.1737
+"function takeLast(count) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_10, _a;             const buffer =",8.3734,7.9457,-0.4277
+"function lastIndexOfOutside(data, item, index, exclude) {     var result, positionResult = {start: index ? index + 1 : data.length + 1, end: 0};      do {         result = data.las",7.6946,7.6946,0.0000
+function parseSingularExpression(data) {     // A hash signifies a pointer     if (data[0] === '#') {         var pointerId = data.substring(1);         if (isNaN(parseInt(pointerI,8.6488,8.8378,0.1890
+"function DimCommand(args) {     var parsed = new statements.ArgumentStatement(args, {         parseArgs: false     });      this.creates = [];      for (var i = 0; i < parsed.args.",8.5530,8.3083,-0.2448
+function end() {   this.writeBuffer(this.crc.value());   fs.closeSync(this.fd);    this.fd = null;   this.crc = null;   this.converter = null; },8.0708,7.9051,-0.1656
+"function(options){ 		var $form=this,submit; 		if(!S.isObj(options)) options = { success: options }; 		this.on('submit',function(evt){ 			evt.preventDefault(); 			evt.stopPropagatio",6.9933,6.9933,0.0000
+"function skip(count) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_14, _a;             let i = 0;       ",8.3403,8.3717,0.0314
+"function main() {     var rawData = $('.HeaderTexture[data-login-user-email]').data();     if (rawData) {         me = {             name: rawData.loginUserName,             mail: ",7.3183,6.9790,-0.3393
+"function CommonJSResolverStrategy(config) { 	BasicResolverStrategy.call(this, config); 	this.config = extend(true, this.config, {}, config); }",9.7057,9.2645,-0.4412
+"function getAttribute(node, prop) {             if (node && node.el) {                 return node.el.getAttribute(prop);             } else {                 return undefined;    ",7.4810,7.4810,0.0000
+"function(m){ 		console.error('S.error',m); 		if(m === S.error.lastError) return; 		S.error.lastError=m; 		alert(m); 	}",8.4095,7.8382,-0.5713
+function remove(el) {             while (el._events.length > 0) {                 el._events.shift().remove();             }              if (el.children) {                 destroy,7.1958,7.4625,0.2667
+"function validateObjectRequired(options, modelObject, entity, parents, errors) {   for (var key in modelObject) {     if (!modelObject[key].type && entity) {       validateObjectRe",7.6794,7.6794,0.0000
+function(path){          // Define the array we'll return.         var routes = [];          // Grab the FS library.         var fs = require('fs');          // Read the contents f,8.4759,8.5650,0.0891
+function appendLine(type) { 		var len = section.children.length 		if (newBlock || 			!len || 			section.children[len - 1].type !== type) { 			section.children.push({ 				type: type,8.7733,8.7733,0.0000
+"function emitValue() {     var arr = toArray();     marker = arr[arr.length - 1];     setTimeout(function() {       emitter.emit('value', arr);     }, 0);   }",8.4470,9.1791,0.7321
+"function genEntityDescription(data, kind, entityName) {     return data({kind: kind, name: entityName}).select('description').join('\n\n'); }",7.8407,7.8407,0.0000
+"function($node,val){ 					var valAsNumber = $node.prop('valueAsNumber'); 					return !( (valAsNumber && (val=valAsNumber)) || ( /^-?[0-9]+(\.[0-9]*)?(E(-|\+)?[0-9]+)?$/i.test(val) ",6.8713,6.8713,0.0000
+"function listenFn(err) {     debug('%s: start listening on %o', this.name, this.uri.get());     this.uri.setPort(instance.address().port);     this.emit('start');     this.status.s",8.0346,8.0346,0.0000
+"function getArrayIndexAt(arr, dimensions, data) {     var currentDimension = dimensions[0];     data.validate(currentDimension, 'number');     currentDimension = Math.max(0, Math.f",8.0824,8.0694,-0.0130
+"function(cb) {       var calli = Dog.new({ name: 'Calli' });       // saves and creates connection       scott.addDog(calli, function(err) {         if (err) { return cb(err); }   ",7.8003,8.0856,0.2853
+"function _shellBundle({   src = 'app/main.js',   dest = 'dist',   baseName = 'build',   ignoreVendors = false,   onlyVendors = false } = {}, jspmConfig, useSourcemaps = false) {   ",8.4045,8.4045,0.0000
+"function ExpressionStatement(data, define) {     this.child = parseExpression(data, define ? define.line : 'unknown');      if (this.child instanceof SyntaxError) throw this.child;",9.1668,9.1668,0.0000
+"function writeBuffer(buffer) {   var written = fs.writeSync(this.fd, buffer, 0, buffer.length, null);   fs.fsyncSync(this.fd);   return written; }",8.0662,8.0662,0.0000
+function intoExport(obj) {     for (var k in obj) {         if (!obj.hasOwnProperty(k)) continue;         exports[k] = obj[k];     } },8.7806,8.7806,0.0000
+"function _bindPolicies (mapping, middlewareSet) {     _.each(middlewareSet, function (_c, id) {          var topLevelPolicyId = mapping[id];         var actions, actionFn;         ",7.6986,7.6986,0.0000
+"function verifyIntent(subject, op, target, data, cb) {   var type = (_.isString(target)) ? target : target.type;   var listeners = listenersFor(op, type);   if (listeners.length ==",7.8560,6.6588,-1.1971
+function compileValue(value) { 		if (value.subtype === 'array') { 			return compileArray(value) 		} else if (value.subtype === 'object') { 			return compileObject(value) 		} else i,9.2388,9.3534,0.1146
+"function(key, secret, region){  			this.sdb = aws.load('sdb', key, secret); 			this.sdb.setRegion(region);  			return this;  		}",8.5823,8.9163,0.3340
+"function create (prototype, properties) {   Ctor.prototype = prototype || {}   return properties ? copy(new Ctor(), properties) : new Ctor() }",8.4402,8.3785,-0.0617
+"function sprintf (fstr, array) {   // check the formatted string is for JSON and confirm is a valid JSON   array.forEach(function (value) {     fstr = format(fstr, value);   });   ",7.6400,7.4765,-0.1635
+"function repeat(times) {     return function (it) {         return __asyncGenerator(this, arguments, function* () {             var e_26, _a;             const buffer = [];   ",7.5435,8.4430,0.8995
+"function genParam(param) {     var res = {         name: param.name || '',         description: param.description || '',         optional: !!param.optional     };     if (param.typ",8.1612,8.1612,0.0000
+"function filter(predicate) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_5, _a;             let index = 0",7.1518,7.5353,0.3835
+"function renderContent(tpl, data, isFinal) {     var temp = juicer(tpl, data, {errorhandling : false})     if(temp == null)     {         console.log(""gg-template-engine: render Er",8.2063,8.2063,0.0000
+"async function empty(source) {     var e_34, _a;     let i = 0;     try {         for (var source_5 = __asyncValues(source), source_5_1; source_5_1 = await source_5.next(), !so",8.2274,8.2274,0.0000
+"function removeAttribute(node, prop) {             if (node && node.el) {                 node.el.removeAttribute(prop);             }         }",7.9820,7.9820,0.0000
+"function drive(name, done) {     name = name.toLowerCase();     done = done || function() { };      if (allowedDrives.indexOf(name) === -1) return done(new Error(""Unknown drive""));",8.8433,8.5444,-0.2989
+"function throwSyntaxError(message, errorLine, size) { 		errorLine = errorLine === undefined ? line : errorLine 		size = size === undefined ? 1 : size 		var snippet = getSnippet(sou",8.5947,8.5947,0.0000
+"function(H,method){ 		this.H=H; 		S.Elt.WithContent.call(this); 		this.attr('method',method); 		S.FormValidator && S.FormValidator.getValidator(this); 	}",6.9981,7.2232,0.2251
+"function validateObjectEntity(modelObject, entity, parents, errors) {   if (!errors) errors = {};   if (!errors.text) errors.text = [];   if (!parents) parents = [];    for (var ke",8.0101,8.0101,0.0000
+"async function count(source) {     var e_33, _a;     let i = 0;     try {         for (var source_4 = __asyncValues(source), source_4_1; source_4_1 = await source_4.next(), !so",8.4292,8.4292,0.0000
+function processFile(file) { 		var changed = true;  		while(changed && !file.processed) { 			changed = false; 			changed = processWraps(file); 			changed = processInserts(file); 		,7.5160,8.3683,0.8523
+"function cleanLines(block, lines) { 		var removeFirst = false 		if (lines.length && emptyRegex.test(lines[0].str)) { 			block.line += 1 			block.size -= 1 			removeFirst = true 		}",8.4884,8.4884,0.0000
+"function on(element, ev, cb, context) {             for (var _len = arguments.length, args = Array(_len > 4 ? _len - 4 : 0), _key = 4; _key < _len; _key++) {                 args[_",6.9920,7.3624,0.3703
+"function (cmd, parentCmd, pos) {     var S  = 'Somme';     var D  = 'Diff';     var P  = 'Produit';     var Q  = 'Quotient';     var O  = 'Opposé';     var I  = 'Inverse';     var ",8.5527,8.6650,0.1123
+"function ShoppingCart (objGoogleCheckout) { 	var self = this; 	 	//todo: check the constructor name 	assert.ok(objGoogleCheckout, ""A GoogleCheckout object is the only required argu",7.9206,7.9206,0.0000
+"function (modelName, entity, options, next) {     if (typeof options === 'function') next = options;     if (!options) options = {};      var modelObject = this.registeredModels[mo",8.7302,8.5115,-0.2187
+"function initialize(done) {     done = done || function() { };     if (fileContents) done();      fs.readFile(__dirname + '/../../data/filesystem.json', {         encoding: 'utf8' ",8.1464,7.5003,-0.6461
+"function flip(it) {     return __asyncGenerator(this, arguments, function* flip_1() {         yield __await(yield* __asyncDelegator(__asyncValues(yield __await(reduce((prev, next",8.2897,8.7257,0.4360
+"function logger(stream){ 	return (...text) => { 		text.map(text => { 			console.log(text) 			stream.write(`${Date.now()} - ${JSON.stringify(text)}\n`) 		}) 	} }",8.5550,8.5811,0.0261
+"function CloseCommand(args, define) {     var parsed = new statements.ExpressionStatement(args, define);     if (!(parsed.child instanceof statements.PointerStatement)) throw new S",8.7676,8.6555,-0.1121
+"function camelCase(str) {     return words(str).reduce((result, word, idx) => {         return result + (idx ? (isUpperCase(word) ? word : capitalize(word)) : lowerCase(word));    ",7.7884,7.6931,-0.0953
+"function(e){ 			var history=S.History, current = history.getFragment(); 			if(OLD_IE && current == history.fragment && history.iframe) current = history.getFragment(history.getHash",7.9497,7.8503,-0.0994
+"function APIs(config, httpClient) { 	let self = this instanceof APIs ? this : Object.create(APIs.prototype);  	if (util.isNullOrUndefined(config)) { 		return self; 	} 	let defaultH",8.6453,8.4540,-0.1913
+function ExecutionContext(options) {     EventEmitter.call(this);      this.stringVars = {};     this.numberVars = {};     this.pointers = {};     this.gosubs = [];     this.privat,8.7282,8.7282,0.0000
+"function( DomainName, callback ){  			var query = { 				DomainName : DomainName  			};  			this.sdb.request('CreateDomain', query, function(err, result){  				if(!err){  					callb",8.9826,5.8263,-3.1564
+function (event) {             // Only pay attention to delegated route events             // if `policy` is declared in event.target             if ( !event.target || !event.targe,6.9374,7.7621,0.8247
+"function createEvent(data = null) {     let isDefaultPrevented = false;      // 返回对象     return Object.create(data, {         defaultPrevented: {             get() {               ",7.2254,7.8991,0.6737
+"function IfCommand(args, define) {     if (util.endsWith(args.toLowerCase(), ' then')) args = args.slice(0, args.length - 5).trim();     else throw new SyntaxError('IF has no THEN'",8.5263,6.7835,-1.7428
+function(duration){ 		if(duration===0) throw new Error('Duration must not be === 0'); 		if(!S.isString(duration)) return duration; 		return duration.contains('ms') ? parseInt(durat,7.4453,7.3425,-0.1029
+function CircleCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 3) throw new SyntaxError('CIRCLE command requires 3 arguments',8.4699,8.3673,-0.1026
+"function filter(predicate) {     return flatMap(value => predicate(value) ? maybe_1.just(value) : maybe_1.nothing()); }",8.5610,8.5610,0.0000
+"function takeHeader(content, level, name) { 		var currLevel = sectionStack.length  		if (level > currLevel + 1) { 			throwSyntaxError('Unexpected header level ' + level + ' on sect",8.2083,8.2485,0.0401
+"function toArray() {     return Object       .keys(data)       .map(function(name) { return data[name]; })       .sort(function(a, b) {         return a.compareTo(b);       });   }",8.1848,7.9424,-0.2423
+"function find(b, ptr, target, level, compare, gt) {   level = level || r_levels(b, ptr)   compare = compare || _compare   gt = gt !== false   var prev_ptr = 0   while(true) {     i",7.2720,7.6461,0.3741
+"function SleepCommand(args, define) {     this.duration = new statements.ExpressionStatement(args, define);     if (this.duration.error) throw this.duration.error; }",8.5252,8.3113,-0.2139
+"function insert (b, node, value) {   return updateNext(b, node, cons(b, value, readNext(b, node))) }",7.9470,7.9470,0.0000
+function (policy) {             // Recursively normalize lists of policies             if (_.isArray(policy)) {                 // Normalize each policy in the chain               ,7.6965,7.6965,0.0000
+"function removeAt(index) {     return function (source) {         return __asyncGenerator(this, arguments, function* () {             var e_32, _a;             let i = 0;     ",8.0200,8.1659,0.1460
+function Server (opts) {  	let server = this; 	server.send = send; 	let isBusy = true; 	 	let queue = []; 	if (!!opts.dir) { 		try { 			fs.mkdirSync(opts.dir); // default './outbox,7.4780,7.4780,0.0000
+"function shallowClone(source, obj) {     if (arguments.length < 2) {         obj = source;         source = {};     }      for (var key in obj) {         if (!obj.hasOwnProperty(ke",9.2421,9.2421,0.0000
+"function ArgumentStatement(args, options, define) {     options = options || {};     this.value = args;     this.flags = {};     this.args = [];     this.options = options;      if",7.9803,7.9803,0.0000
+"function genProperty(members, name) {     var res = {         name: name,         deprecated: false,         description: '',         types: []     };      members.filter({        ",7.9937,6.9525,-1.0412
+"function startPollingForErrors() {     var checkFunction = (function() {         // For an unknown reason, page.evaluate does not always load the function in the top window,       ",8.7830,8.7274,-0.0557
+function DrawspriteCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 3) throw new SyntaxError('DRAWSPRITE command requires 3 ar,8.4032,8.2523,-0.1510
+"function scan(predicate, initial) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_7, _a;             let in",8.1511,8.0020,-0.1491
+"function errorHandler(response, error) {     response       .status(500)       .send(error !== undefined && error !== null ? error.toString() : '')   }",7.3717,7.5941,0.2224
+function ColorCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 3) throw new SyntaxError('COLOR command requires 3 arguments');,8.4425,8.3021,-0.1404
+"function parseName(name) {         var modName = undefined,             ext = undefined,             temp = undefined,             index = name.indexOf('.'),             isRelative",8.6700,8.4433,-0.2267
+"function createArrayDepth(dimensions, endpoint) {     var currentDimension = dimensions[0];      var newArr = new Array(currentDimension);     for (var i = 0; i < currentDimension;",8.3978,8.3978,0.0000
+"function getStyle(node, prop) {             if (node && node.el) {                 if (node.el !== undefined && node.el.style !== undefined) {                     return node.el.st",8.1680,8.1680,0.0000
+"function entropy( out, arr, clbk ) { 	var len = arr.length, 		v, i; 	for ( i = 0; i < len; i++ ) { 		v = clbk( arr[ i ], i ); 		if ( typeof v === 'number' ) { 			out[ i ] = ENTROPY",8.1975,8.1975,0.0000
+"function MQlobberClient(stream, options) {     EventEmitter.call(this);      options = options || {};      this._options = options;     this.subs = new Map();     this._matcher = n",7.6246,7.6246,0.0000
+"function consrow(sym) {     return _.find(Const.constable, function(row) {         return (row.indexOf(sym) > -1);     }) || ''; }",6.9144,6.9144,0.0000
+"function takeWhile(predicate) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_15, _a;             let i = 0",8.0214,8.0214,0.0000
+"function map(mapper) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_2, _a;             let index = 0;    ",8.3620,8.1484,-0.2135
+function parse(code) {     try {         var labels = {};         var root = [];         var manager = new BlockManager();          var lines = code.split('\n');         for (var i,8.9829,8.8227,-0.1601
+"async function last(iterable) {     var e_12, _a;     let last = undefined;     try {         for (var iterable_10 = __asyncValues(iterable), iterable_10_1; iterable_10_1 = awa",7.7247,7.5872,-0.1376
+"function before(op, type, listener) {   if (!_.isFunction(listener)) { throw new Error('Callback must be a function'); }   if (!registeredListeners[op][type]) { registeredListeners",6.7903,7.0101,0.2199
+"function take(count) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_9, _a;             let i = 0;        ",7.3806,8.0424,0.6618
+"function changePosition(el, index) {              var HTMLElement = el.el;             if (HTMLElement && HTMLElement.parentNode) {                  var parentNode = HTMLElement.pa",7.7332,7.7332,0.0000
+"function elementAtOrDefault(index, or) {     return async function (it) {         var e_19, _a;         let i = 0;         try {             for (var it_2 = __asyncValues(it),",7.8278,8.2567,0.4289
+"function argnanmin( arr ) { 	if ( !Array.isArray( arr ) ) { 		throw new TypeError( 'argnanmin()::invalid input argument. Must provide an array.' ); 	} 	var len = arr.length, 		min ",8.0653,8.1772,0.1119
+"function findPositions(data, items) {     var depth = 0;     var rootId = -1;     var result = [];     var currentItem = {};      var accumulator = '';     for (var ci = 0; ci < da",7.6585,7.6869,0.0284
+"function save(done) {     if (process.browser) return done();      fs.writeFile(__dirname + '/../../data/filesystem.json', JSON.stringify(fileContents), function(err) {         if ",8.5482,7.8152,-0.7329
+"async function toArray(iterable) {     var e_29, _a;     const blob = [];     try {         for (var iterable_17 = __asyncValues(iterable), iterable_17_1; iterable_17_1 = await",8.1857,8.1857,0.0000
+"function append(parent, child) {             if (parent.el !== undefined && child.el !== undefined) {                 parent.el.appendChild(child.el);             }         }",8.3856,8.3856,0.0000
+"function(cb) {       Person.findOrCreate({ name: 'Scott' }, function(err, person) {         assert(Person.isInstance(person));         assert(person.uuid);         assert(person.na",7.6372,7.6266,-0.0106
+"function(verb, path, controller, method){          // Only add the route if we recognise the verb.         if (this.__verbs.indexOf(verb) >= 0){              // Create an actual ob",8.0347,6.6248,-1.4099
+"function onDOMAttached(el) {             var _this2 = this;              var handlers = [],                 attached = false,                 _step = undefined;              if (el",8.3487,7.9060,-0.4427
+"function Block(line, def, parent) {     this.startNames = [];     this.thenNames = [];     this.endNames = [];     for (var i = 0; i < def.start.length; i++) this.startNames.push(d",8.7370,8.7370,0.0000
+"function(verb, path, controllerName){          // Load the referenced controller.         var controllerPath = this.options.controllersPath + controllerName;         try {         ",7.8239,7.0978,-0.7261
+"function hasClass(node, className) {             if (node && node.el) {                 return node.el.classList.contains(className);             } else {                 return fa",7.5481,7.5481,0.0000
+function (d){     if (!arguments.length) {       if (typeof _i === 'object'){         var o = {};         for (var prop in _i){           o[prop] = _i[prop]();         }         re,7.7858,7.4295,-0.3563
+"function align(key, leftStream, rightStream, epsilon) {   // TODO probably need to add stream options support for thigns like high water mark   var aligner = new Aligner(key, {}, e",8.7435,8.1179,-0.6257
+"function getBase64 (url, fn, opt) {   var m = /^(https?):\/\/([^:\/]+)(?::(\d+))?([^:]*)$/.exec(url);   if (!opt) opt = {};   if (m !== null) {     http.get({host:m[2], port:parseI",7.4719,7.2000,-0.2718
+"function entropy( out, sigma ) { 	var len = sigma.length, 		i; 	for ( i = 0; i < len; i++ ) { 		out[ i ] = ENTROPY( sigma[ i ] ); 	} 	return out; }",7.4192,7.9923,0.5731
+function Client (opts) { 	this.id = opts.id; 	this.opts = opts; 	this.send = send;  	this.isConnected = false; 	let client = this;  	let queue = []; 	let callbacks = {}; 	let isBus,7.2881,7.2881,0.0000
+"function findNextOutside(data, items, index, exclude) {     var result, positionResult = {start: 0, end: index ? index - 1 : -1};      do {         result = findNext(data, items, p",7.3049,7.2758,-0.0291
+"function snakeCase(str, sep = '_') {     return words(str).reduce(         (result, word, idx) => result + (idx ? sep : '') + lowerCase(word), ''     ); }",7.6064,7.6064,0.0000
+function(cb) {       scott.deleteAllDogs(function(err) {         if (err) { return cb(err); }          scott.delete(function(err) {           cb(err);         });       });     },7.8213,8.1588,0.3375
+function Injectables(deps){ 	var self = this; 	this.registry = { 		injector: this 	}; 	Object.keys(deps|| {}).forEach(function(k){ 		if(k == 'injectables') return; 		self.registry[,8.6826,8.3869,-0.2956
+"function load(file, options) {   var stream = fs.createReadStream(file, options);   function onEnd() {     this.emit('load');   }   function onError(err) {     this.emit('error', e",8.3876,8.2566,-0.1310
+"function genBlockMethod(members, name) {     var res = {         name: name,         description: '',         params: [],         returns: [],         deprecated: false,         fi",8.5547,8.5253,-0.0294
+"function init(pathToModels, cb, addToSwagger) { 	modelPath = pathToModels; 	glob(modelPath + '/**/*.js', function(err, files) { 		if (err) return cb && cb(err);  		files.forEach(fu",7.4564,7.6325,0.1761
+"function doppler(it) {     return __asyncGenerator(this, arguments, function* doppler_1() {         var e_27, _a;         const buffer = [];         try {             for (var",7.4975,7.4472,-0.0503
+"function updateAt(index, value) {     return function (source) {         return __asyncGenerator(this, arguments, function* () {             var e_31, _a;             let i = 0",8.0491,8.3617,0.3125
+"function camelCaseObjectKeys(obj) { 	var newObj = (Array.isArray(obj))  		? new Array(obj.length) 		: {}; 	 	utils.map(obj, function (key, value) { 		var newKey; 		 		if (typeof(ke",8.5380,8.3001,-0.2379
+"function splitOutside(data, separator, exclude) {     var result = [];      var accumulator = """";     for (var i = 0; i < data.length; i++) {         accumulator += data[i];       ",7.9951,8.1991,0.2039
+function addChildren(newData) {     var promises = [];     newData.forEach(function (child) {       promises.push(add(child));     });      return Promise.all(promises).then(emitVa,7.7206,8.1767,0.4561
+"function setAttribute(node, prop, value) {             if (node && node.el) {                 if (isObject(prop)) {                     Object.keys(prop).forEach(function (key) {  ",7.8828,7.8205,-0.0624
+"function(){ 					App.info(""Listening on port ""+port); 					/*#if DEV*/ 					var notify = require('notify-send'); 					//notify-send ""Volume"" -i /usr/share/notify-osd/icons/gnome/sc",7.9377,7.9377,0.0000
+function bemRequireLoader(source) {   const bemFs = nodeEval(source);    const targets = [];   const self = this;   bemFs.forEach((source) => {     if (source['raw']) {       targe,8.8366,8.9673,0.1306
+"function removeStyle(node, prop) {             if (node && node.el) {                 node.el.style[prop] = '';             }         }",8.1552,7.7400,-0.4152
+"function BasicResolverStrategy(config) { 	ResolverStrategy.call(this, config); 	this.config = extend(true, this.config, {}, config); }",8.7348,7.7615,-0.9733
+"function execute(ast, ctx, done) {     if (!done && !(ctx instanceof ExecutionContext)) {         done = ctx;         ctx = new ExecutionContext();     }      ast.execute(ctx, done",9.0260,8.4105,-0.6155
+function detach(node) {             if (node.placeholder instanceof HTMLElement === false) {                 node.placeholder = createPlaceholder(node.data.tag || node.el.tagName);,7.9153,7.7501,-0.1652
+"function addClass(node, className) {             if (node && node.el) {                 node.el.classList.add(className);             }         }",7.3297,7.3297,0.0000
+"function(app, route){          var self = this;          // Figure out the folder they want to bind.         var folderPath = route.controller.replace(/staticDir:/g, '');         v",7.7073,7.5953,-0.1120
+"async function first(iterable) {     var e_13, _a;     try {         for (var iterable_11 = __asyncValues(iterable), iterable_11_1; iterable_11_1 = await iterable_11.next(), !it",7.9329,7.9304,-0.0025
+"function($node,val){ 					return !val.match(/^(\d{4}-\d{2}-\d{2})T(.+)(Z|(\+|-)([01][0-9]|2[0-3]):([0-5][0-9]))$/) 						|| !checkDateFormat(RegExp.$1) || !checkTimeFormat(RegExp.$",6.2524,6.1885,-0.0638
+"function (i, validate){   // we offer a shortcut to get types when only one argument is provided   if (arguments.length === 1) {     return av.type(i);   }    // we store the value",7.2077,7.8324,0.6247
+"function reduce(predicate, initial) {     return async function (iterable) {         var e_6, _a;         let index = 0;         let prevState = initial;         try {       ",8.0691,8.4765,0.4073
+"function(action){          var url;         var error;          // Iterate over the routes, looking for a match.         var routes = this.getRoutes();         for (var i = 0; url ",6.5279,6.6984,0.1705
+"function incrmin() { 	var min = null; 	/** 	* FUNCTION: incrmin( [value] ) 	*	If a `value` is provided, updates and returns the updated min. If no `value` is provided, returns the ",7.8642,7.6216,-0.2426
+function (type) {     var examples = this.getExamples(type);     return examples[Math.floor(Math.random() * examples.length)];   },8.0874,7.6804,-0.4070
+"function on(event, cb, context) {                 var args = Array.prototype.slice.call(arguments, 0);                 return dom.on.apply(false, [this].concat(args));             ",7.3920,7.4385,0.0465
+"function nextLine(context, ast, prompt, oldPrompt, forceCursor, eval) {     rl.question(prompt, function(answer) {         eval(answer, context, ast, forceCursor === -1 ? ast.root.",8.3967,8.3967,0.0000
+"function(cb) {       Person.find('Scott', function(err, person) {         if (err) { return cb(err); }          assert(person.uuid);         assert(person.name === 'Scott');       ",7.3741,7.3741,0.0000
+function LoadspriteCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 2) throw new SyntaxError('LOADSPRITE command requires 2 ar,8.6083,7.2447,-1.3637
+"function flatMap(mapper) {     return function (maybe) {         for (const value of maybe) {             return mapper(value);         }         return maybe_1.nothing();   ",8.5065,8.5065,0.0000
+function start(options) {     options = options || {};      var prompt = options.prompt || '> ';      var eval = options.eval || run;      var context = new ExecutionContext();    ,9.0430,8.6762,-0.3668
+"function endsWith(data, str) {     if (data.length < str.length) return false;     if (data === str) return true;     return data.lastIndexOf(str) === data.length - str.length; }",7.4298,7.4298,0.0000
+function MarkLogicStore(options) {     options = options || {};     var collectionName = options.collection || defaultOptions.collection;     this.baseUri = options.baseUri || enco,8.0352,8.3434,0.3082
+function ekurtosis( p ) { 	if ( !( isNumber(p) && 0 <= p && p <= 1) ) { 		return NaN; 	} 	return 6 + square( p ) / ( 1 - p ); },7.8683,7.8683,0.0000
+"function attach(node) {             if (node && node.el && node.placeholder && node.placeholder.parentNode) {                 node.placeholder.parentNode.replaceChild(node.el, node",7.8366,7.8366,0.0000
+"function populateLabels(labelTemplateString, labels, numberOfSteps, graphMin, stepValue) {         if (labelTemplateString) {             //Fix floating point errors by setting to ",6.4395,7.1710,0.7316
+"function listenOnChanges(fn) {     var scriptContent = 'var cartId=""' + me.cart + '"";var extId=""' + chrome.runtime.id + '"";$(document).bind(""MenuDishesChanged QuantityChanged MealD",7.2071,8.1443,0.9372
+"function indexOfOutside(data, item, index, exclude) {     var result, positionResult = {start: 0, end: index ? index - 1 : -1};      do {         result = data.indexOf(item, positi",7.3975,7.5854,0.1879
+"function unshift(...next) {     return function (it) {         return __asyncGenerator(this, arguments, function* () {             for (let i = 0; i < next.length; ++i)        ",7.9007,9.1937,1.2929
+"function resolveFilePatterns (baseDir, patterns, opt_omitWarnings) {   var resolvedFiles = [];    if (patterns) {     for (var i = 0; i < patterns.length; ++i) {       var matches ",7.9415,8.1047,0.1632
+"function (engineName) {     var engine = engineName;      // If the engine is not a function, retrieve it from the modules     if (typeof engine !== 'function') {       engine = Sk",9.2065,8.9700,-0.2365
+"function every(predicate) {     return async (it) => {         var e_23, _a;         let i = 0;         try {             for (var it_4 = __asyncValues(it), it_4_1; it_4_1 = a",8.0085,8.0085,0.0000
+function modalOpen (options) {     if (isString(options)) options = optionsFromTarget(options);     var modal = select('#d3-view-modal');     if (!modal.size())         select('bod,6.3256,5.9132,-0.4125
+"function OpenCommand(args, define) {     var lowerArgs = args.toLowerCase();     var forIndex = lowerArgs.indexOf(' for ');     if (forIndex === -1) throw new SyntaxError('OPEN wit",8.6554,7.7184,-0.9371
+function(cb) {             // Callback is optional             cb = util.optional(cb);              // Grab policies config & policy modules and trigger callback             this.l,8.2145,8.2145,0.0000
+"function concat(...iterables) {     return function (it) {         return __asyncGenerator(this, arguments, function* () {             var e_20, _a;             yield __await(y",8.3426,7.9891,-0.3536
+"function (modelName, modelObject) {      // check for name, object and if model already exists     if (!modelName) return ('Name is not defined');     if (!modelObject) return ('Mo",8.7754,8.5922,-0.1832
+"function text(node, _text2) {             if (node && node.el) {                 node.el.innerHTML = _text2;             }         }",7.8655,7.8655,0.0000
+function write(obj) {   if(obj.type === 'crc') return this.end();   var buffer = this.converter.entry(obj);   this.crc.push(buffer);   return this.writeBuffer(buffer); },8.5481,8.6303,0.0822
+"function tap(tapper) {     return function (it) {         return __asyncGenerator(this, arguments, function* () {             var e_1, _a;             let index = 0;          ",8.2649,8.2862,0.0213
+"async function toWriteableArray(iterable) {     var e_30, _a;     const blob = [];     try {         for (var iterable_18 = __asyncValues(iterable), iterable_18_1; iterable_18_",7.6498,7.6498,0.0000
+"function pascalCase(str) {     return words(str).reduce((result, word, idx) => {         return result + (idx && isUpperCase(word) ? word : capitalize(word));     }, ''); }",7.7293,7.2770,-0.4523
+"function findLast(data, items, index) {     var currentIndex = -1, found = '';     for (var i = 0; i < items.length; i++) {         var item = items[i];         var location = data",7.3611,7.5743,0.2132
+"function isNode (node, type) {   var isNode = true   var requiredProps = [     'attributes',     'children',     'type'   ]    requiredProps.some(function (prop) {     if (!node[pr",7.9560,7.9383,-0.0178
+"function(callback,compilationSource){ 		if( compilationSource && this.cache.compilationSource && this.cache.compilationSource === compilationSource ) return; 		var callbackError=fu",8.6972,8.6972,0.0000
+"function plugin(opts) {     return function(files, metalsmith, done) {         async.eachSeries(Object.keys(files), prerender, done);          function prerender(file, done) {     ",7.6694,7.6393,-0.0301
+"function CommandStatement(name, args, manager, line) {     this.name = name;     this.args = args;      if (!commands[name]) throw new SyntaxError('Unknown command: ' + name);     ",9.0319,8.8727,-0.1592
+"function takeUntil(predicate) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_16, _a;             let i = 0",8.6580,8.2788,-0.3792
+"function match({ just, nothing }) {     return function (maybe) {         for (const value of maybe) {             return just(value);         }         return nothing();    ",8.0343,7.9815,-0.0529
+"function(){ 				Object.defineProperty(this,'listen',{ value:function(){} }); 				var hasSyncEvent=this.self.store.hasSyncEvent; 				this.on('request.started',function(){ 					S.log",8.1410,8.4336,0.2926
+"function(string, args){ 		string = i18n.appTranslations[string] || string; 		return args ? UString.vformat(string,args) : string; 	}",7.2948,8.1226,0.8279
+"function entropy( out, x ) { 	var len = x.length, 		i; 	if ( out.length !== len ) { 		throw new Error( 'entropy()::invalid input arguments. Input and output matrices must be the sa",7.3328,7.3328,0.0000
+"function Stream(ref, opts) {   var data = {},       emitter = this,       mapFn, started, ended, readable, marker;    if (!opts) opts = {};   if (!opts.page) opts.page = 10;     //",7.7595,7.7595,0.0000
+"function distinct(it) {     return __asyncGenerator(this, arguments, function* distinct_1() {         var e_24, _a;         const resultSet = new Set();         try {         ",8.3161,8.3161,0.0000
+"function(err, result) {                         if (err) {                             cb0(err);                         } else {                             var retErr = null;    ",8.5787,8.0209,-0.5578
+"function FunctionStatement(name, args) {     if (name[name.length - 1] === '$') {         this.type = 'string';         this.name = name.substring(0, name.length - 1);     } else {",8.1846,8.4631,0.2785
+"function AbstractSyntaxTree(root, labels, manager) {     this.root = root;     this.labels = labels;     this.manager = manager;      manager.parse(this); }",9.0281,9.0281,0.0000
+"function(tag, props){ 	var konstructor = Element.Constructors[tag]; 	if (konstructor) return konstructor(props); 	if (typeof tag != 'string') return document.id(tag).set(props);  	",7.7351,8.1530,0.4179
+"function some(predicate) {     return async (it) => {         var e_22, _a;         let index = 0;         try {             for (var it_3 = __asyncValues(it), it_3_1; it_3_1 ",8.0328,8.0328,0.0000
+"function publish(subject, op, target) {   try {     var type = (_.isString(target)) ? target : target.type;     var topic = getTopic(type);     // optimization: would be nice to te",7.5186,7.5186,0.0000
+"function orderBy(keySelector, comparison) {     const trueKeySelector = keySelector || defaultKeySelector;     const trueComparison = comparison || defaultComparison;     return",7.9334,7.9334,0.0000
+"function(url, params){          // If the parameters weren't in the form of an array, fix that.         if (!(params instanceof Array)){             params = [params];         }   ",7.3779,7.2279,-0.1500
+"function setArrayIndexAt(arr, dimensions, val, data) {     var currentDimension = dimensions[0].execute(data);     data.validate(currentDimension, 'number');     currentDimension -",8.3922,8.3570,-0.0352
+function drawAllDataPoints(animationDecimal){ 			var rotationDegree = (2*Math.PI)/data.datasets[0].data.length;  			ctx.save(); 			//translate to the centre of the canvas. 			ctx.t,6.7892,6.7892,0.0000
+"function identity(iterable) {     return __asyncGenerator(this, arguments, function* identity_1() {         return yield __await(yield __await(yield* __asyncDelegator(__asyncValu",7.7786,7.8504,0.0718
+"function() {             // Build / normalize policy config             this.mapping = this.buildPolicyMap();             _bindPolicies(this.mapping, sails.middleware.controllers);",7.3759,7.4052,0.0293
+"function Analyzer(config, state) { 	config = config || {};  	this.state = state;  	this.config = extend(true, { 		finders: { 			styl : [ 				{ 					name: 'regex', 					config: { 		",8.5285,8.5285,0.0000
+"function removeClass(node, className) {             if (node && node.el) {                 node.el.classList.remove(className);             }         }",7.6108,7.4120,-0.1988
+"function WhileCommand(args, define) {     var parsed = new statements.ArgumentStatement(args, {         separator: false     });      this.condition = parsed.args[0];     this.bloc",8.7111,8.7519,0.0408
+function RrectCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 5) throw new SyntaxError('RRECT command requires 5 arguments');,7.9695,7.3640,-0.6056
+"function setStyle(node, prop, value) {             if (node && node.el) {                 if (isObject(prop)) {                     Object.keys(prop).forEach(function (key) {      ",8.3579,8.3579,0.0000
+"function next() {       var description,           firstTopic = topicChain[0];       for (description in context) {         if (description !== 'topic' && context.hasOwnProperty(de",7.4212,7.6203,0.1990
+"function( data ){  		var result = {}, attributeCount = 0;  		_.each(data, function(value, key){  			result['Attribute.' + attributeCount + '.Name'] = key; 			result['Attribute.' + ",6.5563,6.6921,0.1357
+"function insert (b, ptr, target, level, compare) {   level = level || r_levels(b, ptr)   compare = compare || _compare   var free = b.readUInt32LE(0) || 8    //figure out before ha",7.2284,7.2284,0.0000
+"function _vendorsList(vendors, ignore = false) {   let vendorsList = ''   let sign = (ignore) ? '-' : '+'    for (let vendor of vendors) {     vendorsList += ` ${sign} ${vendor}`  ",7.5134,7.2479,-0.2656
+"function inPosition(index, items) {     for (var i = 0; i < items.length; i++) {         var item = items[i];         if (index >= item.start && index <= item.end) return item;    ",7.1461,7.1461,0.0000
+"function() {       var args = norma('path:s?', arguments);       var _url = url.format(_.clone(this.url));       var _path = (args.path || '').replace(/^\//, '');       return url.",6.6469,6.7738,0.1268
+"function(){ 			var radioNames=[],error; 			this.$form.find(selectorAllElements).forEach(function($elt){ 				if($elt.is('input[type=""radio""]')){ 					var name=$elt.attr('name'); 			",6.2896,5.9355,-0.3541
+"function parseLine(line, i, labels, notLineNumber, manager) {     line = line.trim();      // Is it an empty line?     if (line === """") return new EmptyStatement('empty');      if ",8.5699,8.5699,0.0000
+"function(lang,/*#if NODE*/entry,/*#/if*/params){ 		var plus = '', route = params.shift(); 		if(route !== true){ 			route = this.routes.get(/*#ifelse NODE*/entry||'main'/*#/if*/).ge",7.4300,7.8226,0.3926
+function TcolorCommand(args) {     var parsed = new statements.ArgumentStatement(args);      if (parsed.args.length < 3) throw new SyntaxError('TCOLOR command requires 3 arguments',8.4307,8.4819,0.0512
+"function() {       var results = [parseInt(this.url.port, 10)];       this.url.hostname && results.push(this.url.hostname);       return results;     }",6.9293,7.3068,0.3774
+"function skipLast(count) {     return function (iterable) {         return __asyncGenerator(this, arguments, function* () {             var e_11, _a;             const buffer =",8.0766,8.0766,0.0000
+"function Intent(subject, op, target, data) {   this.subject = subject;   this.op = op;             // create | read | update | delete   this.target = target;   this.data = data; }",7.9346,7.5598,-0.3748
+"function pad(data, length, pad) {     data = String(data);     pad = pad || ' ';     while (data.length < length) data += pad;     return data; }",7.8121,7.8121,0.0000
+"function(){          // If we've already loaded the routes, skip.         if (this.routes.length === 0){              // Grab the entries.             var routes;             try {",7.5007,7.5007,0.0000
+"function Service(name) {   debug('new service: %s', name);   assert(name, ""service not supplied with name"");    this.name       = name;   this.middleware = [];   this.uri        = ",7.9796,7.9796,0.0000
+"function or(defaultValue) {     return function (maybe) {         for (const value of maybe) {             return maybe_1.just(value);         }         return defaultValue; ",8.5592,8.6384,0.0792
+"function Polling (objGoogleCheckout) { 	var self = this; 	 	//todo: check the constructor name 	assert.ok(objGoogleCheckout, ""A GoogleCheckout object is the only required argument""",7.8782,7.8782,0.0000
+"function(callback,onEnd){ 			//because next function is changing, we can't go this.next.bind(this) 			S.asyncWhile(function(){ this.next.apply(null,arguments); }.bind(this),callbac",8.8388,8.8388,0.0000
+"function run(cmd, context, ast, cursor, next) {     try {         // Must be a command         if (cmd[0] === ""."") {             var command = cmd.substring(1);             var spa",8.6275,8.6275,0.0000
+"function(path){ 	var xhr=new XMLHttpRequest; 	xhr.open('GET',baseUrl+'web/'+path+'.js', false); 	xhr.send(); 	if(xhr.status !== 200) new FatalError(/*#if DEV*/'Unable to load: '+pa",8.2445,8.4578,0.2133
+function onChange () {     if (props.onChange) {       var changeHandlers = [...props.onChange]       var value = editor.getValue()       return changeHandlers.map((f) => f(value)),6.7700,7.6465,0.8765
+function add(snapshot) {     return Promise       .resolve(mapFn(snapshot))       .then(function(val) {         data[snapshot.key()] = val;       });   },7.6021,7.8401,0.2379
+"function issorted( arr, clbk ) { 	if ( !Array.isArray( arr ) ) { 		throw new TypeError( 'issorted()::invalid input argument. Must provide an array.' ); 	} 	if ( arguments.length > ",7.3441,7.4119,0.0678
+"function Population(opts) {      // allow use object for gene     var genes = opts.genes.map(function(gene, index) {         return index;     });     this.oriGenes = opts.genes;  ",8.0763,7.8124,-0.2639
+"function entropy( arr, path, sep ) { 	var len = arr.length, 		opts = {}, 		dget, 		dset, 		v, i; 	if ( arguments.length > 2 ) { 		opts.sep = sep; 	} 	if ( len ) { 		dget = deepGet(",8.3940,8.3007,-0.0933
+function gulpQiniuCdn(conf) {    qiniu.conf.ACCESS_KEY = conf.AK;   qiniu.conf.SECRET_KEY = conf.SK;    var putpolicy = new qiniu.rs.PutPolicy()     //token parameter   putpolicy.s,7.8298,7.8298,0.0000
+"function replace(target, replaceWith) {     function escapeRegExp(str) {         return str.replace(/[.*+?^${}()|[\]\\]/g, ""\\$&""); // $& means the whole matched string     }  ",7.2360,7.6062,0.3702
+"function GoogleCheckout(settings) { 	var self = this; 	 	assert.ok(settings.merchantNumber, 'settings.merchantNumber is required'); 	assert.ok(settings.merchantKey, 'settings.merch",7.4261,7.9636,0.5375
+"function(){ 		return (this._label===false?'':this._label)+(this._between||' ') 			+S.Elt.toString(this.tagName,this._attributes,null); 	}",6.7088,7.4950,0.7862
+function Load (options) {   var self = this;   self._path = options.path || './config';   self._environment = options.environment || args().env || 'development';   self._reload = o,8.3126,8.4800,0.1673
+"function(url, val){          // Create a new object that we can manipulate safely.         var object = extend({}, val);          // Flag so we remember to append any attributes th",7.7141,7.7141,0.0000
+"function SyncFile(path, flags, mode) {   flags = flags || 'w';   this.fd = fs.openSync(path, flags, mode);   this.crc = new Crc64();   this.converter = new Converter(); }",9.0222,8.0252,-0.9970
